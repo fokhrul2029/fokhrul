@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+    .news-input{
+       width: 50% ; 
+    }
+    
+}
+@media (max-width: 769px) {
+    .about-img{
+        width: 100% !important;
+        padding-bottom : 40px ; 
+    }
+}
