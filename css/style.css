@@ -10,3 +10,11 @@
         padding-bottom : 40px ; 
     }
 }
+::-webkit-scrollbar {
+    background: rgb(12, 47, 94);
+    width: 10px;
+  } 
+  ::-webkit-scrollbar-thumb {
+    background: rgb(87, 7, 63) ;
+    border-radius: 10px;
+  }
