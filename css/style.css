@@ -13,7 +13,7 @@ body{
     background-color: black ;
 }
 .disppear{
-    animation: fokhrul .5s forwards ;
+    animation: fokhrul 0s forwards ;
 }
 @keyframes fokhrul {
     100%{
