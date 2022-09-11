@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <!-- PreLoader Block -->
+    <div class="loader">
+        <img src="loader.gif" alt="">
+    </div>
+    <!-- Navigation Section -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">Fokhrul Islam</a>
@@ -61,7 +65,7 @@
             </div>
         </div>
     </section>
-    <!-- About Section -->
+    <!-- About Section start  -->
     <section class="bg-dark text-light py-5 pb-md-0 border-bottom border-danger">
         <div class="container">
         <div class="d-md-flex justify-content-between align-items-center">
@@ -77,8 +81,17 @@
             </div>
         </div>
     </div>
-    </section>
-    <!-- Boxes -->
+    </section> <!--   About Section end   -->
+    <!-- Protfolio Section start  -->
+    <section class="p-5 bg-dark text-light">
+        <div class="container">
+            <h1 class="text-center color-light">
+                <span class="border-bottom border-light shadow">Protfolio</span>
+            </h1>
+            <!-- Protfolio Items  -->
+        </div>
+    </section> <!-- Protfolio section end -->
+    <!-- Service Section Start -->
     <section class="p-5 bg-dark text-light">
         <div class="container">
             <h1 class="text-center color-light p-5">
@@ -134,7 +147,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- Service section end -->
     <!--Contact Section-->
     <section class="py-5 bg-dark text-light" id="About">
         <div class="container">
@@ -152,7 +165,7 @@
                             <span class="fw-bold">Facebook:</span> <a target="_blank" class="nav-link d-inline text-primary" href="http://facebook.com/ifokhrul.2029">Md Fokhrul Islam</a>
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Phone:</span> +880177777
+                            <span class="fw-bold group-link">WhatsApp: </span><a href="#">Click to go to WhatsApp</a>
                         </li>
                     </ul>
                 </div>
@@ -160,7 +173,7 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer class="p-4 bg-dark text-light text-center position-relatice">
+    <footer class="p-4 pb-3 bg-dark text-light text-center position-relatice border-top border-bottom border-danger">
         <div class="container">
             <p class="lead">Copyright by &copy; <a href="http://facebook.com/ifokhrul.2029" target="_black" class="nav-link text-primary fw-bold d-inline">Fokhrul Islam</a></p>
             <a href="#" class="position-absolute bottom-0 end-0 p-4">
@@ -174,10 +187,15 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
         AOS.init();
+        const loader = document.querySelector(".loader")
+        window.onload = () => {
+            loader.classList.add("disppear")
+        }
     </script>
+    
     <!-- Google Ads For Text -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8133511135144482"
-    crossorigin="anonymous"></script>
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8133511135144482"
+    crossorigin="anonymous"></script> -->
     <!-- Google Ads End -->
 </body>
 </html>
