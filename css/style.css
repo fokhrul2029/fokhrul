@@ -11,6 +11,7 @@ body{
     justify-content: center ;
     align-items: center ;
     background-color: black ;
+    z-index: 9 ;
 }
 .disppear{
     animation: fokhrul 0s forwards ;
