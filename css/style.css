@@ -1,4 +1,7 @@
 /* Natuarally CSS */
+html{
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden ;
 }
@@ -27,6 +30,7 @@ img{
     justify-content: center ;
     align-items: center ;
     background-color: black ;
+    z-index: 9999;
 }
 .disppear{
     animation: fokhrul 0s forwards ;
@@ -55,13 +59,28 @@ img{
     .news-input{
        width: 50% ; 
     }
+    .about-img img{
+        width: 70%;
+    }
 }
 @media (max-width: 769px) {
     .about-img{
-        width: 100% !important;
+        /* width: 100% !important; */
         padding-bottom : 40px ; 
     }
 }
+
+.about-img{
+    padding: 30px 50px  ;
+}
+.about-img img{
+    box-shadow: -8px 3px 9px 6px rgb(5, 5, 5) ; 
+    border-radius: 100%;
+}
+
+
+
+
 
 /*------------ Custom Scroller for Right Site ------------ */
 ::-webkit-scrollbar {
@@ -101,6 +120,7 @@ img{
     transform-origin: bottom;
     transition: .3s ease-in-out;
     background-color: rgba(0, 11, 109, 0.637);
+    padding: 70px 10px 10px 0px;
 }
 
 .protfolioCard:hover .protfolioContant{

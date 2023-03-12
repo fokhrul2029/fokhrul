@@ -17,19 +17,12 @@ window.onscroll = () => {
     }
 }
 
-// var triggerEl = document.querySelector('#myTab a[href="#home"]')
-// bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
-
-// var triggerFirstTabEl = document.querySelector('#myTab li:first-child a')
-// bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
-
-
 var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
 triggerTabList.forEach(function (triggerEl) {
   var tabTrigger = new bootstrap.Tab(triggerEl)
 
   triggerEl.addEventListener('click', function (event) {
-    event.preventDefault()
+    // event.preventDefault();
     tabTrigger.show()
   })
 })

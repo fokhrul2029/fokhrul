@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fokhrul Islam | Web Application Developer, Front-end Developer, 
+    I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.">
+    <!-- Bootstrap CSS  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Fokhrul Islam | Web Application Developer, Front-end Developer</title>
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Custom css for protfolio Page  -->
+    <link rel="stylesheet" href="./css/protfolio.css">
 </head>
 <body>
     <!-- PreLoader Block -->
     <div class="loader">
-        <img src="loader.gif" alt="">
+        <img src="img/loader.gif" alt="">
     </div>
     <!-- Navigation Section -->
     <nav id="navbar" class="overflow-hidden navbar navbar-expand-lg back-black navbar-dark fixed-top">
@@ -47,16 +53,22 @@
     <section id="home" class="bg-dark text-light py-5 pb-md-0 text-center text-md-start">
         <div class="container pt-5">
             <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
+                <div
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+                >
                     <h1 class="d-block d-md-none pb-3 pt-5 text-primary">WELCOME TO MY WEBSITE</h1>
                     <h1><span class="d-none d-md-inline-block">This is</span>
                         <span class="d-inline-block d-md-none">I'm</span>
                         <span class="text-warning">Fokhrul Islam</span>
                     </h1>
                     <p class="lead my-4 color-light">I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
-                    <button class="btn btn-primary btn-md"><a href="#About" class="nav-link">Fokhrul Islam</a></button>
+                    <button class="btn btn-danger btn-md"><a href="#" class="nav-link">Download CV</a></button>
                 </div>
-                <img class="img-fluid w-50 d-none d-md-block" src="Untitled-3 copy.png" alt="">
+                <img
+                data-aos="fade-left"
+                data-aos-duration="3000"
+                class="img-fluid w-50 d-none d-md-block" src="img/Untitled-3 copy.png" alt="">
             </div>
         </div>
     </section>
@@ -64,20 +76,35 @@
     <section class="bg-primary text-light p-5">
         <div class="container">
             <div class="d-md-flex justify-content-between align-items-center">
-                <h3 class="mb-md-0">
+                <h3 
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                class="mb-md-0">
                     <i>Now i am Available on- </i>
                 </h3>
                 <div class="input-group news-input ">
-                    <a target="_blank" href="https://facebook.com/ifokhrul.2029" class="fs-2 ms-2 text-light">
+                    <a 
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                    target="_blank" href="https://facebook.com/ifokhrul.2029" class="fs-2 ms-2 text-light">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a target="_blank" href="https://twitter.com/ifokhrul2029" class="fs-2 ms-4 text-light">
+                    <a 
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    target="_blank" href="https://twitter.com/ifokhrul2029" class="fs-2 ms-4 text-light">
                         <i class="bi bi-twitter"></i>
                     </a>
-                    <a target="_blank" href="#" class="fs-2 ms-4 text-light">
+                    <a 
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                    target="_blank" href="http://mailto:ifokhrul.2029@gmail.com" class="fs-2 ms-4 text-light">
                         <i class="bi bi-envelope-fill"></i>
                     </a>
-                    <a target="_blank" href="https://instagram.com/ifokhrul.2029" class="fs-2 ms-4 text-light">
+                    <a 
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    target="_blank" href="https://instagram.com/ifokhrul.2029" class="fs-2 ms-4 text-light">
                         <i class="bi bi-instagram"></i>
                     </a>
                 </div>
@@ -88,8 +115,19 @@
     <section id="About" class="bg-dark text-light py-5 pb-md-0">
         <div class="container pt-5">
         <div class="d-md-flex justify-content-between align-items-center pt-5">
-            <img src="Untitled-3 copy.png" alt="" class="img-fluid w-50 about-img px-5">
-            <div class="text-light me-auto text-center text-md-start pb-1">
+            <div 
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            class="about-img">
+                <img src="img/Untitled-1 copy.png" alt="" class="img-fluid ">
+            </div>
+            
+            <div
+            data-aos="fade-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            class="text-light me-auto text-center text-md-start pb-1">
                 <h1 class="fw-bold">About Me</h1>
                 <b class="lead fs-5 fw-bold py-3 d-block">
                     <span>Developer</span>
@@ -109,9 +147,13 @@
             </h1>
             <div class="row pt-5">
                 <!-- Protfolio Item 1 -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4">
-                    <div class="protfolioCard border border-primary rounded">
-                        <img src="DOLFIN.png" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-9 m-auto pt-4">
+                    <div 
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-easing="linear"
+                    class="protfolioCard border border-primary rounded">
+                        <img src="img/DOLFIN.png" alt="">
                         <div class="protfolioContant">
                                 <div class="testContant">
                                   
@@ -127,9 +169,13 @@
                     </div>
                 </div>
                 <!-- Protfolio Item 1 -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4">
-                    <div class="protfolioCard border border-primary rounded">
-                        <img src="Home_work.png" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-9 m-auto pt-4">
+                    <div 
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-easing="linear"
+                    class="protfolioCard border border-primary rounded">
+                        <img src="img/Home_work.png" alt="">
                         <div class="protfolioContant">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, beatae?</p>
                             <div class="cardBtn">
@@ -140,9 +186,13 @@
                     </div>
                 </div>
                 <!-- Protfolio Item 1 -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4">
-                    <div class="protfolioCard border border-primary rounded">
-                        <img src="Home work 2.png" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-9 m-auto pt-4">
+                    <div 
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-easing="linear"
+                    class="protfolioCard border border-primary rounded">
+                        <img src="img/Home work 2.png" alt="">
                         <div class="protfolioContant">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, beatae?</p>
                             <div class="cardBtn">
@@ -165,7 +215,7 @@
                 <div 
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                class="col-md">
+                class="col-md-6 col-lg-4 mt-5">
                     <div class="card bg-dark color-light">
                         <div class="card-body text-center Boxes">
                             <div class="h1 mb-3">
@@ -181,7 +231,7 @@
                 data-aos="flip-left" 
                 data-aos-duration="1000"
                 data-aos-easing="linear"
-                class="col-md">
+                class="col-md-6 col-lg-4 mt-5">
                     <div class="card bg-dark color-light my-4 my-md-0">
                         <div class="card-body text-center Boxes">
                             <div class="h1 mb-3">
@@ -197,7 +247,7 @@
                 data-aos="fade-left" 
                 data-aos-duration="1000"
                 data-aos-easing="linear"
-                class="col-md">
+                class="col-md-6 col-lg-4 mt-5">
                     <div class="card bg-dark color-light">
                         <div class="card-body text-center Boxes">
                             <div class="h1 mb-3">
@@ -212,32 +262,76 @@
             </div>
         </div>
     </section> <!-- Service section end -->
+
+
+
     <!--Contact Section-->
-    <section id="Contact" class="py-5 bg-dark text-light" >
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md">
-                    <h1 class="text-center mb-4">Contact Info</h1>
-                    <ul class="list-group list-group-flush lead MyContact">
-                        <li class="list-group-item">
-                            <span class="fw-bold">Email:</span> ifokhrul.2029@gmail.com
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Phone:</span> +880 17426-72425
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Facebook:</span> <a target="_blank" class="nav-link d-inline text-primary" href="http://facebook.com/ifokhrul.2029">Md Fokhrul Islam</a>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold group-link">WhatsApp: </span><a href="#">Click to go to WhatsApp</a>
-                        </li>
-                    </ul>
+    
+
+    <section id="Contact" class="py-5 bg-dark">
+        <div class="container mt-5 pt-5">
+            <div class="row align-items-center justify-content-between back-black rounded-5 py-5">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div 
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                    class="bg-dark color-light my-1 px-4 py-4">
+                        <h1>Contact</h1>
+                    </div>
+                    <div 
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                    class="bg-light my-2 px-4 py-4">
+                        <h5 class="fs-4">Phone</h5>
+                        <a title="Call Now" target="_blank" class="nav-link" href="tel:+8801742672426">+880 1742672426</a>
+                    </div>
+                    <div 
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                    class="bg-light my-1 py-4 px-4">
+                        <h5 class="fs-4">Email</h5>
+                        <a title="Send an Email" targer="_black" href="http://mailto:ifokhrul.2029@gmail.com" class="nav-link">ifokhrul.2029@gmail.com</a>
+                    </div>
+                    <div 
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                    class="bg-primary my-2 py-4 px-4 d-flex justify-content-between align-items-center">
+                        <div>
+                            <h3 class="text-light">Social</h3>
+                        </div>
+                        <div 
+                        data-aos="fade-up-right"
+                        data-aos-duration="2000"
+                        class="list-group list-group-horizontal">
+                            <a target="_blank" href="https://facebook.com/ifokhrul.2029" class="fs-2 ms-2 text-light">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a target="_blank" href="https://instagram.com/ifokhrul.2029" class="fs-2 ms-4 text-light">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a target="_blank" href="https://twitter.com/ifokhrul2029" class="fs-2 ms-4 text-light">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div 
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+                class="col-lg-6 col-md-6 col-sm-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58929.01619565235!2d91.77390786619863!3d24.85274713535693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3751017129f45a3f%3A0x63b69b68673e6212!2zU2hveXNobyBVcmEgLSDgpo_gppXgprLgpr4g4Kas4Ka-4Kec4Ka_!5e1!3m2!1sen!2sbd!4v1678605999924!5m2!1sen!2sbd" width="100%" height="435" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
+
+
     <!-- Footer -->
-    <footer class="p-4 pb-3 text-light text-center position-relatice back-black">
+    <footer class="p-4 pb-3 text-light text-center position-relative back-black">
         <div class="container">
             <p class="lead">Copyright by &copy; <a href="http://facebook.com/ifokhrul.2029" target="_black" class="nav-link text-primary fw-bold d-inline">Fokhrul Islam</a></p>
             <a href="#" class="position-absolute bottom-0 end-0 p-4">
@@ -245,12 +339,26 @@
             </a>
         </div>
     </footer>
+
+
+    <!-- // Protfolio Template Page 1 -->
+    <!-- <section class="PageA">
+        <div class="container">
+            <h1>Fokhrul Islam</h1>
+        </div>
+    </section> -->
+
+
+
+
     <!-- AOS Library //Animation on scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Custom Javascript -->
     <script src="js/script.js"></script>
+    <!-- Protfolio JS -->
+    <script src="./js/protfolio.js"></script>
     
     <!-- Google Ads For Text -->
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8133511135144482"
