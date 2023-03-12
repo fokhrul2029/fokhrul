@@ -16,7 +16,6 @@ window.onscroll = () => {
         document.querySelector("#logo").style.fontSize = "35px "; 
     }
 }
-
 var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
 triggerTabList.forEach(function (triggerEl) {
   var tabTrigger = new bootstrap.Tab(triggerEl)
@@ -26,9 +25,3 @@ triggerTabList.forEach(function (triggerEl) {
     tabTrigger.show()
   })
 })
-
-
-
-
-
-
