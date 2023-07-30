@@ -49,7 +49,7 @@ $(".carousel2").owlCarousel({
   autoplayHoverPause: true,
   responsive: {
     0: {
-      items: 1,
+      items: 3,
     },
     600: {
       items: 3,
