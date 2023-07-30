@@ -36,29 +36,50 @@ var typed = new Typed(".typing", {
   backSpeed: 60,
 });
 // Owl Carousel Js
-
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    center: true,
-    nav: true,
-    navText: `◀▶`,
-    dots: false,
-    dotsEach: true,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 5,
-      },
+// Scond Carousel
+$(".carousel2").owlCarousel({
+  loop: true,
+  margin: 10,
+  center: true,
+  nav: false,
+  dots: false,
+  dotsEach: true,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
     },
-  });
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 5,
+    },
+  },
+});
+// First Carousel
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  center: true,
+  nav: true,
+  navText: `◀▶`,
+  dots: false,
+  dotsEach: true,
+  autoplay: true,
+  autoplayTimeout: 2200,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 5,
+    },
+  },
 });

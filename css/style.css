@@ -161,8 +161,32 @@ img {
   transform: translate(-50%, -50%);
   transition: 0.3s ease-in-out;
 }
-.item .tools img:hover + .iconShadow {
-  box-shadow: 0 0 91px 20px #ff00008c;
+.item .tools img:hover + .vs-code {
+  box-shadow: 0 0 91px 20px #008bd3;
+}
+.item .tools img:hover + .vite {
+  box-shadow: 0 0 91px 20px #ba37fe;
+}
+.item .tools img:hover + .live-server {
+  box-shadow: 0 0 91px 20px #7b1fa2;
+}
+.item .tools img:hover + .nodejs {
+  box-shadow: 0 0 91px 20px #8bc500;
+}
+.item .tools img:hover + .npm {
+  box-shadow: 0 0 91px 20px #d50000;
+}
+.item .tools img:hover + .yarn {
+  box-shadow: 0 0 91px 20px #558cbb;
+}
+.item .tools img:hover + .git {
+  box-shadow: 0 0 91px 20px #de4c36 ;
+}
+.item .tools img:hover + .github {
+  box-shadow: 0 0 91px 20px  #000  ;
+}
+.item .tools img:hover + .prettier {
+  box-shadow: 0 0 91px 20px  #000  ;
 }
 .item .tools img {
   margin: 10px auto;
@@ -220,12 +244,19 @@ img {
   transform: scale(1.1);
 }
 /* Contact CSS */
+.socialInfo img{
+  width: 50% !important ;
+  transition: .3s ease-in-out ;
+}
+.socialInfo img:hover{
+  transform: scale(1.1);
+}
 #Contact .row i {
   padding: 10px;
   cursor: pointer;
 }
 #Contact .row i:hover {
-  color: rgb(90, 90, 90) !important;
+  color: rgb(190, 190, 190) !important;
 }
 #Contact .row a:hover {
   color: rgb(145, 144, 144);
