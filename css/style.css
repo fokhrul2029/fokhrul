@@ -9,6 +9,9 @@ img {
   max-width: 100%;
 }
 /* ---------- Special CSS Which for use on HTML Page as Class -------- */
+.active{
+  color: #0dcaf0 !important ;
+}
 :root {
   --primary-color: var(rgb(0, 168, 55));
   --secondery-color: var(rgb(42, 117, 255));
