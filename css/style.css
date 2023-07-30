@@ -14,12 +14,12 @@ img {
 }
 :root {
   --primary-color: var(rgb(0, 168, 55));
-  --secondery-color: var(rgb(42, 117, 255));
+  --secondery-color: var(#2a75ff);
   --black-color: var(rgb(0, 0, 0));
 }
 .primary-bg {
   /* background-color: var(--primary-color) !important  ; */
-  background-color: rgb(0, 168, 55);
+  background-color: #00a837;
 }
 .secondery-bg {
   /* background-color: var(--secondery-color) ; */
