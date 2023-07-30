@@ -8,12 +8,17 @@
       name="description"
       content="Fokhrul Islam | Web Application Developer, Front-end Developer, 
     I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device." />
-    <!-- Bootstrap CSS  -->
+    <!-- Fav-icon of Application -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Bootstrap CSS and icon -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!-- AOS / Animation on Scrool - CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>
       Fokhrul Islam | Web Application Developer, Front-end Developer
@@ -29,9 +34,11 @@
     <!-- Navigation Section -->
     <nav
       id="navbar"
-      class="overflow-hidden navbar navbar-expand-lg back-black navbar-dark fixed-top">
+      class="overflow-hidden navbar navbar-expand-lg black-bg navbar-dark fixed-top">
       <div class="container">
-        <a href="#" id="logo" class="navbar-brand">Fokhrul Islam</a>
+        <a href="#" id="logo" class="navbar-brand color-light">
+          <img src="img/favicon.png" alt="" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -65,91 +72,46 @@
     <section
       id="home"
       class="bg-dark text-light py-5 pb-md-0 text-center text-md-start">
-      <div class="container pt-5">
-        <div class="d-sm-flex align-items-center justify-content-between">
-          <div data-aos="zoom-in" data-aos-duration="2000">
+      <div class="container py-5">
+        <div class="d-sm-flex align-items-center justify-content-between pt-5">
+          <div data-aos="fade-up" data-aos-duration="1000">
             <h1 class="d-block d-md-none pb-3 pt-5 text-primary">
               WELCOME TO MY WEBSITE
             </h1>
             <h1>
               <span class="d-none d-md-inline-block">This is</span>
               <span class="d-inline-block d-md-none">I'm</span>
-              <span class="text-warning">Fokhrul Islam</span>
+              <span class="text-info">Fokhrul Islam</span>
             </h1>
-            <p class="lead my-4 color-light">
-              I am a front-end web developer. I can provide clean code and pixel
-              perfect design. I also make the website more & more interactive
-              with web animations.A responsive design makes your website
-              accessible to all users, regardless of their device.
-            </p>
-            <button class="btn btn-danger btn-md">
-              <a href="./img/Fokhrul's CV.pdf" class="nav-link" download
-                >Download CV</a
-              >
+            <span class="fs-4 my-4 fw-bold">Expert at: </span>
+            <span class="typing my-4 text-info fs-4 fw-bold"></span>
+            <br />
+
+            <button class="text-light btn btn-success btn-md mt-4">
+              <a href="./img/Fokhrul's CV.pdf" class="nav-link" download>
+                Download CV
+              </a>
             </button>
           </div>
-          <img
-            data-aos="fade-left"
-            data-aos-duration="3000"
-            class="img-fluid d-none d-md-block homeImg"
-            src="img/Untitled-3 copy.png"
-            alt="" />
-        </div>
-      </div>
-    </section>
-    <!-- Newsletter -->
-    <section class="bg-primary text-light p-5">
-      <div class="container">
-        <div class="d-md-flex justify-content-between align-items-center">
-          <h3 data-aos="fade-right" data-aos-duration="1000" class="mb-md-0">
-            <i>Now i am Available on- </i>
-          </h3>
-          <div class="input-group news-input">
-            <a
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              target="_blank"
-              href="https://facebook.com/ifokhrul.2029"
-              class="fs-2 ms-2 text-light">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              target="_blank"
-              href="https://twitter.com/ifokhrul2029"
-              class="fs-2 ms-4 text-light">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              target="_blank"
-              href="http://mailto:ifokhrul.2029@gmail.com"
-              class="fs-2 ms-4 text-light">
-              <i class="bi bi-envelope-fill"></i>
-            </a>
-            <a
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              target="_blank"
-              href="https://instagram.com/ifokhrul.2029"
-              class="fs-2 ms-4 text-light">
-              <i class="bi bi-instagram"></i>
-            </a>
+          <div class="homeImg d-none d-md-block">
+            <img class="img-fluid" src="img/img-2-out.png" alt="" />
           </div>
         </div>
       </div>
     </section>
     <!-- About Section start  -->
+    <section class="text-center bg-dark">
+      <div>
+        <img
+          style="max-width: 50%; margin: auto"
+          src="./img/line4 .png"
+          alt="" />
+      </div>
+    </section>
     <section id="About" class="bg-dark text-light py-5 pb-md-0">
       <div class="container pt-5 pb-5">
         <div class="d-md-flex justify-content-between align-items-center pt-5">
-          <div
-            data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-            class="about-img">
+          <div class="about-img">
             <img src="img/Fokhrul's Image.jpg" alt="" class="img-fluid" />
           </div>
           <div
@@ -160,7 +122,7 @@
             <h1 class="fw-bold">About Me</h1>
             <b class="lead fs-5 fw-bold py-3 d-block">
               <span>Developer</span>
-              <span class="text-danger">& Designer</span>
+              <span class="text-info">& Designer</span>
             </b>
             <p class="lead fs-5 color-light">
               I am a front-end web developer. I can provide clean code and pixel
@@ -168,9 +130,7 @@
               with web animations.A responsive design makes your website
               accessible to all users, regardless of their device.
             </p>
-            <a
-              class="btn btn-outline-danger rounded-5 px-5 py-2"
-              href="#Contact"
+            <a class="btn btn-outline-info rounded-5 px-5 py-2" href="#Contact"
               >Let's talk</a
             >
           </div>
@@ -182,7 +142,7 @@
     <section id="Protfolio" class="protfolioSection text-light">
       <div class="container pb-4">
         <h1 class="text-center color-light pt-5">
-          <span class="text-primary border-bottom border-primary shadow"
+          <span class="text-info border-bottom border-info shadow"
             >Protfolio</span
           >
         </h1>
@@ -193,17 +153,17 @@
               data-aos="zoom-in"
               data-aos-duration="1500"
               data-aos-easing="linear"
-              class="protfolioCard border border-primary rounded">
+              class="protfolioCard border border-info rounded">
               <img src="img/ProjectA.jpg" alt="" />
               <div class="protfolioContant">
                 <div class="testContant">
-                  <p>
+                  <p class="text-light">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Fugit, beatae?
                   </p>
                   <div class="cardBtn">
-                    <button class="btn btn-primary">Button</button>
-                    <button class="btn btn-primary">Button</button>
+                    <a class="btn btn-outline-info" href="#">Code</a>
+                    <a class="btn btn-outline-info" href="#">View</a>
                   </div>
                 </div>
               </div>
@@ -223,8 +183,8 @@
                   Fugit, beatae?
                 </p>
                 <div class="cardBtn">
-                  <button class="btn btn-success">Button</button>
-                  <button class="btn btn-success">Button</button>
+                  <button class="btn btn-info">Button</button>
+                  <button class="btn btn-info">Button</button>
                 </div>
               </div>
             </div>
@@ -256,8 +216,10 @@
     <!-- Service/Profession Section Start -->
     <section id="Profession" class="p-5 bg-dark text-light">
       <div class="container pt-5">
-        <h1 class="text-center color-light py-5">
-          <span class="border-bottom border-light shadow">What I Do</span>
+        <h1 class="text-center text-light py-5">
+          <span class="text-info border-bottom border-info shadow"
+            >What I Do</span
+          >
         </h1>
         <div class="row text-center">
           <div
@@ -274,7 +236,7 @@
                   I can easily make your design into code within few hours.I
                   will use HTML, CSS, JS and Bootstrap to Design Your Website.
                 </p>
-                <a href="#" class="btn btn-primary">Read More</a>
+                <!-- <a href="#" class="btn btn-success">Read More</a> -->
               </div>
             </div>
           </div>
@@ -291,9 +253,9 @@
                 <h3 class="Card-title mb-3">Web Development</h3>
                 <p class="card-text">
                   I will build your website from scratch. I will use Node.JS,
-                  React JS, Python, MongoDB for your website backend.
+                  React JS, MongoDB for your website backend.
                 </p>
-                <a href="#" class="btn btn-primary">Read More</a>
+                <!-- <a href="#" class="btn btn-primary">Read More</a> -->
               </div>
             </div>
           </div>
@@ -308,13 +270,157 @@
                   <i class="bi bi-code-slash"></i>
                 </div>
                 <h3 class="Card-title mb-3">Clean Code</h3>
-                <p class="card-text">
+                <p class="card-text pb-4">
                   I can code your website in neat and clean that any developer
                   can understand that.
                 </p>
-                <br />
-                <a href="#" class="btn btn-primary">Read More</a>
+                <!-- <a href="#" class="btn btn-primary">Read More</a> -->
               </div>
+            </div>
+          </div>
+        </div>
+        <h3
+          class="pt-5 mb-5 d-inline-block text-info border-bottom border-info">
+          Which Tools I Use
+        </h3>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-easing="linear"
+          class="owl-carousel owl-theme pb-5 mb-5">
+          <div class="item">
+            <div class="tools pt-3">
+              <img
+                src="img/tools/vs-code.png"
+                alt="Visual Studio"
+                title="(IDE) Integrated development environment / Code Editor" />
+              <span class="iconShadow vs-code"></span>
+              <a
+                target="_blank"
+                class="fs-4 text-info nav-link"
+                href="https://code.visualstudio.com/"
+                >Visual Studio</a
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="tools pt-3">
+              <img
+                src="https://vitejs.dev/logo-with-shadow.png"
+                alt="Vite"
+                title="Get ready for a development environment" />
+              <span class="vite iconShadow"></span>
+              <a
+                target="_blank"
+                class="fs-4 text-info nav-link"
+                href="https://vitejs.dev/"
+                >Vite</a
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="tools pt-3">
+              <img
+                src="img/tools/live-server.png"
+                alt="Live Server"
+                title="Instant live-reloading for web development" />
+              <span class="live-server iconShadow"></span>
+              <a
+                target="_blank"
+                class="fs-4 text-info nav-link"
+                href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+                >Live Server</a
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="tools pt-3">
+              <img
+                src="img/tools/node js.png"
+                alt="Node.Js"
+                title="Open-source, cross-platform JavaScript runtime environment" />
+              <span class="nodejs iconShadow"></span>
+              <a
+                target="_blank"
+                class="fs-4 text-info nav-link"
+                href="https://nodejs.org/en"
+                >Node.Js</a
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="tools pt-3">
+              <img
+                src="img/tools/npm-icon.png"
+                alt="npm"
+                title="Package manager for Node.js and JavaScript" />
+              <span class="npm iconShadow"></span>
+              <a
+                target="_blank"
+                class="fs-4 text-info nav-link"
+                href="https://www.npmjs.com/"
+                >npm</a
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="tools pt-3">
+              <img
+                src="img/tools/yarn-pkg-icon.png"
+                alt="Favicon"
+                title="package manager for JavaScript" />
+              <span class="yarn iconShadow"></span>
+              <a
+                target="_blank"
+                class="fs-4 text-info nav-link"
+                href="https://yarnpkg.com/"
+                >Yarn</a
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="tools pt-3">
+              <img
+                src="img/tools/git-icon.png"
+                alt="Git-icon"
+                title="Powerful version control system for developers" />
+              <span class="git iconShadow"></span>
+              <a
+                target="_blank"
+                class="fs-4 text-info nav-link"
+                href="https://git-scm.com/"
+                >Git</a
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="tools pt-3">
+              <img
+                src="img/tools/github-icon.png"
+                alt="GitHub"
+                title="Developer Platform to Deliver Secure of Software" />
+              <span class="github iconShadow"></span>
+              <a
+                target="_blank"
+                class="fs-4 text-info nav-link"
+                href="https://github.com/"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="tools pt-3">
+              <img
+                src="img/tools/prettier-icon.png"
+                alt="prettier-icon"
+                title="Code formatter for maintaining code style consistency" />
+              <span class="prettier iconShadow"></span>
+              <a
+                target="_blank"
+                class="fs-4 text-info nav-link"
+                href="https://prettier.io/"
+                >Prettier</a
+              >
             </div>
           </div>
         </div>
@@ -437,11 +543,10 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer
-      class="p-4 pb-3 text-light text-center position-relative back-black">
+    <footer class="p-4 pb-3 text-light text-center position-relative black-bg">
       <div class="container">
         <p class="lead">
-          Copyright by &copy;
+          AllRight Reserved by &copy;
           <a
             href="http://facebook.com/ifokhrul.2029"
             target="_black"
@@ -454,6 +559,12 @@
         </a>
       </div>
     </footer>
+    <!-- jQuery v3.7.0 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Owl Carousel Js  -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Typed.js / js for Typing on Text  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- AOS Library //Animation on scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Bootstrap js -->

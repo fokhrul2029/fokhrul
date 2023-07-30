@@ -19,6 +19,46 @@ triggerTabList.forEach(function (triggerEl) {
   var tabTrigger = new bootstrap.Tab(triggerEl);
 
   triggerEl.addEventListener("click", function (event) {
-    tabTrigger.show();
+    tabTrigger.show(event);
+  });
+});
+// Typed.js / js for Typing on Text
+var typed = new Typed(".typing", {
+  strings: [
+    "Programming.",
+    "Frontend Development.",
+    "Modern JavaScript.",
+    "React-Js.",
+    "Clear Code Design.",
+  ],
+  typeSpeed: 60,
+  loop: true,
+  backSpeed: 60,
+});
+// Owl Carousel Js
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    center: true,
+    nav: true,
+    navText: `◀▶`,
+    dots: false,
+    dotsEach: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+    },
   });
 });

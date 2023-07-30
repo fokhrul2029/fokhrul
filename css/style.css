@@ -9,11 +9,45 @@ img {
   max-width: 100%;
 }
 /* ---------- Special CSS Which for use on HTML Page as Class -------- */
-.color-light {
-  color: rgb(255 255 255 / 71%);
+:root {
+  --primary-color: var(rgb(0, 168, 55));
+  --secondery-color: var(rgb(42, 117, 255));
+  --black-color: var(rgb(0, 0, 0));
 }
-.back-black {
-  background-color: rgb(1 3 20 / 90%);
+.primary-bg {
+  /* background-color: var(--primary-color) !important  ; */
+  background-color: rgb(0, 168, 55);
+}
+.secondery-bg {
+  /* background-color: var(--secondery-color) ; */
+  background-color: rgb(42, 117, 255);
+}
+.black-bg {
+  background-color: var(--black-color);
+  background-color: rgba(5, 5, 15, 0.925);
+}
+.primary-text {
+  color: var(--primary-color);
+  color: rgb(0, 168, 55);
+}
+.secondery-text {
+  color: rgb(42, 117, 255);
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #6e6e6e;
+}
+.btn-primary:hover {
+  background-color: #ffffff;
+}
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.btn-outline:hover {
+  background-color: white;
+  color: black;
 }
 /* Special CSS End */
 /* ---------- Preloader CSS ---------- */
@@ -29,6 +63,9 @@ img {
   background-color: black;
   z-index: 9999;
 }
+.loader img {
+  width: 40%;
+}
 .disppear {
   animation: fokhrul 0s forwards;
 }
@@ -39,18 +76,59 @@ img {
   }
 } /*    End     */
 /* -----------Navigation CSS--------- */
+#navbar {
+  padding: 0;
+}
 #navbar,
 #logo {
   transition: 0.3s ease-in-out;
 }
 #logo {
   font-size: 35px;
+  width: 50px;
+}
+#logo img {
+  border: 2px solid green;
+  border-radius: 100%;
 }
 .homeImg {
-  width: 190%;
+  width: 40%;
   padding-top: 30px;
 }
+.homeImg:hover {
+  animation-name: upAndDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes upAndDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
 /* End */
+/* ---------- About Section -------------- */
+#About {
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* background-color: rgba(1, 3, 20, 0.9) !important; */
+}
+.distant::before {
+  content: "";
+  position: absolute;
+  width: 149%;
+  height: 200px;
+  background-color: #212529;
+  transform: rotate(-5deg);
+  left: -64px;
+  top: 40px;
+  box-shadow: 0px -20px 20px 0px #0dcaf00d;
+}
+/* End  */
 /* ----------Service/Profession CSS ------------*/
 .Boxes {
   box-shadow: 0px 0px 11px #000000a1;
@@ -59,19 +137,56 @@ img {
 .about-img {
   padding: 30px 50px;
   width: 150%;
+  animation-name: upAndDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .about-img img {
   box-shadow: -8px 3px 9px 6px rgb(5, 5, 5);
   border-radius: 100%;
   width: 80%;
 }
+.item .tools {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.item .iconShadow {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease-in-out;
+}
+.item .tools img:hover + .iconShadow {
+  box-shadow: 0 0 91px 20px #ff00008c;
+}
+.item .tools img {
+  margin: 10px auto;
+  width: 100px;
+  /* border-radius: 100%; */
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+
+.item .tools img:hover {
+  transform: scale(1.1);
+}
+
+.item .tools a:hover {
+  color: rgb(0, 168, 55) !important;
+}
 /*------------ Custom Scroller for Right Site ------------ */
 ::-webkit-scrollbar {
-  background: rgb(12, 47, 94);
+  background: rgba(42, 117, 255, 0.747);
   width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(87, 7, 63);
+  background: rgba(0, 168, 56, 0.493);
   border-radius: 10px;
 }
 /*--------- Protfolio CSS -----------*/
@@ -104,30 +219,26 @@ img {
 .protfolioCard:hover img {
   transform: scale(1.1);
 }
-
-
-
-
 /* Contact CSS */
-#Contact .row i{
-  padding: 10px  ;
+#Contact .row i {
+  padding: 10px;
   cursor: pointer;
 }
-#Contact .row i:hover{
+#Contact .row i:hover {
   color: rgb(90, 90, 90) !important;
 }
-#Contact .row a:hover{
+#Contact .row a:hover {
   color: rgb(145, 144, 144);
 }
-#Contact p.contact-des{
+#Contact p.contact-des {
   width: 50% !important ;
 }
 
 @media (max-width: 991px) {
-  .homeImg {
+  /* .homeImg {
     width: 50%;
-  }
-  #Contact p.contact-des{
+  } */
+  #Contact p.contact-des {
     width: 70% !important ;
   }
 }
@@ -145,7 +256,18 @@ img {
   .protfolioCard {
     height: 220px;
   }
-  #Contact p.contact-des{
+  #Contact p.contact-des {
     width: 100% !important ;
   }
+}
+/* .typed-cursor.typed-cursor--blink */
+.typed-cursor.typed-cursor--blink {
+  color: #0dcaf0;
+  font-weight: 900;
+  font-size: 21px;
+}
+.typed-cursor {
+  color: #0dcaf0;
+  font-weight: 900;
+  font-size: 21px;
 }
