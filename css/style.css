@@ -156,8 +156,6 @@ img {
   transition: 0.3s ease-in-out;
 }
 .item .iconShadow {
-  width: 5px;
-  height: 5px;
   position: absolute;
   top: 44%;
   left: 50%;
@@ -186,10 +184,10 @@ img {
   box-shadow: 0 0 91px 20px #de4c36;
 }
 .item .tools img:hover + .github {
-  box-shadow: 0 0 91px 20px #000;
+  box-shadow: 0 0 91px 20px rgba(255, 255, 255, 0.342) ;
 }
 .item .tools img:hover + .prettier {
-  box-shadow: 0 0 91px 20px #000;
+  box-shadow: 0 0 91px 20px rgba(255, 166, 0, 0.425) ;
 }
 .item .tools img {
   margin: 10px auto;
