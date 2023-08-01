@@ -9,7 +9,7 @@ img {
   max-width: 100%;
 }
 /* ---------- Special CSS Which for use on HTML Page as Class -------- */
-.active{
+.active {
   color: #0dcaf0 !important ;
 }
 :root {
@@ -114,7 +114,7 @@ img {
 }
 /* End */
 /* ---------- About Section -------------- */
-#About {
+#about {
   width: 100%;
   height: auto;
   position: relative;
@@ -183,13 +183,13 @@ img {
   box-shadow: 0 0 91px 20px #558cbb;
 }
 .item .tools img:hover + .git {
-  box-shadow: 0 0 91px 20px #de4c36 ;
+  box-shadow: 0 0 91px 20px #de4c36;
 }
 .item .tools img:hover + .github {
-  box-shadow: 0 0 91px 20px  #000  ;
+  box-shadow: 0 0 91px 20px #000;
 }
 .item .tools img:hover + .prettier {
-  box-shadow: 0 0 91px 20px  #000  ;
+  box-shadow: 0 0 91px 20px #000;
 }
 .item .tools img {
   margin: 10px auto;
@@ -247,24 +247,24 @@ img {
   transform: scale(1.1);
 }
 /* Contact CSS */
-.socialInfo img{
+.socialInfo img {
   width: 50% !important ;
-  transition: .3s ease-in-out ;
+  transition: 0.3s ease-in-out;
 }
-.socialInfo img:hover{
+.socialInfo img:hover {
   transform: scale(1.1);
 }
-#Contact .row i {
-  padding: 10px;
+#contact .row i {
+  padding: 10px 12px;
   cursor: pointer;
 }
-#Contact .row i:hover {
+#contact .row i:hover {
   color: rgb(190, 190, 190) !important;
 }
-#Contact .row a:hover {
+#contact .row a:hover {
   color: rgb(145, 144, 144);
 }
-#Contact p.contact-des {
+#contact p.contact-des {
   width: 50% !important ;
 }
 
@@ -272,7 +272,7 @@ img {
   /* .homeImg {
     width: 50%;
   } */
-  #Contact p.contact-des {
+  #contact p.contact-des {
     width: 70% !important ;
   }
 }
@@ -290,7 +290,7 @@ img {
   .protfolioCard {
     height: 220px;
   }
-  #Contact p.contact-des {
+  #contact p.contact-des {
     width: 100% !important ;
   }
 }
