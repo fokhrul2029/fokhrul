@@ -19,7 +19,7 @@ var typed = new Typed(".typing", {
   strings: [
     "Programming.",
     "Frontend Development.",
-    "JavaScript Developer.",
+    "JavaScript Development.",
     "React-Js.",
     "Clear Code Design.",
   ],
