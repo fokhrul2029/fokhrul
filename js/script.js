@@ -14,14 +14,6 @@ window.onscroll = () => {
     document.querySelector("#logo").style.fontSize = "35px ";
   }
 };
-// var triggerTabList = [].slice.call(document.querySelectorAll("#myTab a"));
-// triggerTabList.forEach(function (triggerEl) {
-//   var tabTrigger = new bootstrap.riggTab(terEl);
-
-//   triggerEl.addEventListener("click", function (event) {
-//     tabTrigger.show(event);
-//   });
-// });
 // Typed.js / js for Typing on Text
 var typed = new Typed(".typing", {
   strings: [
