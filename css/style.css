@@ -82,6 +82,9 @@ img {
 #navbar {
   padding: 0;
 }
+#navbar button:focus {
+  box-shadow: 0 0 0;
+}
 #navbar,
 #logo {
   transition: 0.3s ease-in-out;
@@ -94,8 +97,8 @@ img {
   border: 2px solid green;
   border-radius: 100%;
 }
-.homeShadow{
-  box-shadow:  0px 0px 20px #000000b8 !important ; 
+.homeShadow {
+  box-shadow: 0px 0px 20px #000000b8 !important ;
 }
 .homeImg {
   width: 40%;
@@ -186,10 +189,10 @@ img {
   box-shadow: 0 0 91px 20px #de4c36;
 }
 .item .tools img:hover + .github {
-  box-shadow: 0 0 91px 20px rgba(255, 255, 255, 0.342) ;
+  box-shadow: 0 0 91px 20px rgba(255, 255, 255, 0.342);
 }
 .item .tools img:hover + .prettier {
-  box-shadow: 0 0 91px 20px rgba(255, 166, 0, 0.425) ;
+  box-shadow: 0 0 91px 20px rgba(255, 166, 0, 0.425);
 }
 .item .tools img {
   margin: 10px auto;
@@ -225,27 +228,42 @@ img {
   position: relative;
   overflow: hidden;
   height: 279px;
+  background-color: rgba(0, 11, 109, 0.637);
 }
 .protfolioCard img {
   transition: 0.3s ease-in-out;
 }
-.protfolioContant {
+.protfolioContent {
   position: absolute;
   text-align: center;
-  top: 0;
-  bottom: 0;
-  transform: scaleY(0);
-  transform-origin: bottom;
+  width: 100%;
+  height: 100% ;
+  left: 0 ;
+  bottom: 0 ;
+  opacity: 0 ;
   transition: 0.3s ease-in-out;
   background-color: rgba(0, 11, 109, 0.637);
-  padding: 70px 10px 10px 0px;
 }
-.protfolioCard:hover .protfolioContant {
-  transform: scaleY(1);
+.textContent {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -30%;
+  opacity: 0 ;
+  transition: .3s ease ;
+}
+.protfolioCard:hover .protfolioContent {
+  opacity: 1 ;
+}
+.protfolioCard:hover .textContent {
+  bottom: 0;
+  opacity: 1 ;
+  transform: translateY(-50%);
 }
 .protfolioCard:hover img {
   transform: scale(1.1);
 }
+
 /* Contact CSS */
 .socialInfo img {
   width: 50% !important ;
