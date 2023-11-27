@@ -237,10 +237,10 @@ img {
   position: absolute;
   text-align: center;
   width: 100%;
-  height: 100% ;
-  left: 0 ;
-  bottom: 0 ;
-  opacity: 0 ;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
   transition: 0.3s ease-in-out;
   background-color: rgba(0, 11, 109, 0.637);
 }
@@ -249,15 +249,15 @@ img {
   width: 100%;
   left: 0;
   bottom: -30%;
-  opacity: 0 ;
-  transition: .3s ease ;
+  opacity: 0;
+  transition: 0.3s ease;
 }
 .protfolioCard:hover .protfolioContent {
-  opacity: 1 ;
+  opacity: 1;
 }
 .protfolioCard:hover .textContent {
   bottom: 0;
-  opacity: 1 ;
+  opacity: 1;
   transform: translateY(-50%);
 }
 .protfolioCard:hover img {
@@ -287,9 +287,6 @@ img {
 }
 
 @media (max-width: 991px) {
-  /* .homeImg {
-    width: 50%;
-  } */
   #contact p.contact-des {
     width: 70% !important ;
   }
